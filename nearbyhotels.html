@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="aMTHBJdfOT9bQehQgxeMD3lAdrEJLRorLDRoMjNF3qM" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <meta name="description" content="All Information and Contact of Hotels Nearby Ghrishnewar-ellora ">
+    <meta name="keywords"
+        content="ghrishneshwar,ellora caves,verul,temple,caves,mandir,god,temple,ganpati mandir,satyaganpati,aurangabad,lodge">
+    <meta name="author" content="Sanjay Vaidya - Ghrishneshwar Mandir , 9422714345 ">
+
+    <link rel="shortcut icon" href="assets/images/logo.png" type="/x-icon" />
+    <!-- TRAILS -->
+    <meta property="og:image" content="https://ghrishneshwar-ellora.com/assets/images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <title>Ghrishneshwar Temple - Nearby Hotels</title>
+</head>
+
+<body>
+    <link itemprop="thumbnailUrl" href="assets/images/appshortcut.png">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="assets/images/appshortcut.png">
+    </span>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+
+            <a class="navbar-brand " href="index.html ">
+                <img src="assets/images/logo.png " alt=" ">
+            </a>
+            <img class="navbar-toggler togglerimg " style="height: 2rem;" src="assets/images/home1.svg" alt=" "
+                onclick="location.href='index.html'">
+
+
+            <div class="collapse navbar-collapse navLinks " id="navbarTogglerDemo03 ">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+    <div class="vego-overlay " onclick="sidebar_close() " style="cursor:pointer " id="myOverlay "></div>
+    <div class="vego-overlay " onclick="addLocationsidebar_close() " style="cursor:pointer " id="myOverlay2 "></div>
+
+
+    <div id="nearbycards">
+        <div class="defaultcard">
+
+            <div class="heading">
+                <h5>Nearby Best Hotels To Stay</h5>
+                <div class="headingunderline"></div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hotelsnearby">
+
+            <div class="placecard-c defaultcard">
+
+                <div class="placecard">
+                    <div class="placeimg hotelimg">
+                        <img src="assets/images/hotel1.jpg" alt="">
+                    </div>
+                    <div class="placeinfo">
+                        <div class="placename">
+                            <p>Hotel Kailas</p>
+                        </div>
+                        <div class="ratings">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <p>4.0</p>
+                        </div>
+                        <div class="phoneno">
+                            <img src="assets/images/call.svg" alt="">
+                            <a href="tel:02437 244 446"><span>02437 244 446</span></a>
+
+                        </div>
+                        <div class="linkmap">
+                            <a href="https://goo.gl/maps/7E2wd8vgBbNBE9fS8">
+                                <img src="assets/images/google-maps.svg" alt=""> Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="addresshotel">
+                    <img src="assets/images/pin.svg" alt="">
+                    <small>NH. 211, Opp Ellora Caves, Aurangabad</small>
+                </div>
+            </div>
+
+
+
+            <div class="placecard-c defaultcard">
+
+                <div class="placecard">
+                    <div class="placeimg hotelimg">
+                        <img src="assets/images/hotel2.jpg" alt="">
+                    </div>
+                    <div class="placeinfo">
+                        <div class="placename">
+                            <p>Ellora Heritage Resort</p>
+                        </div>
+                        <div class="ratings">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <p>4.2</p>
+                        </div>
+                        <div class="phoneno">
+                            <img src="assets/images/call.svg" alt="">
+                            <a href="tel:9347474773"><span>9347474773</span></a>
+                        </div>
+
+                        <div class="linkmap">
+                            <a href="https://goo.gl/maps/zQyKyGSbaWNX3u6u7">
+                                <img src="assets/images/google-maps.svg" alt=""> Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="addresshotel">
+                    <img src="assets/images/pin.svg" alt="">
+                    <small>Near New MTDC, Ellora Caves, Aurangabad.</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hotelsnearby">
+            <div class="placecard-c defaultcard">
+
+                <div class="placecard">
+                    <div class="placeimg hotelimg">
+                        <img src="assets/images/hotel3.jpg" alt="">
+                    </div>
+                    <div class="placeinfo">
+                        <div class="placename">
+                            <p>Vrindavan Resorts</p>
+                        </div>
+                        <div class="ratings">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <p>3.9</p>
+                        </div>
+                        <div class="phoneno">
+                            <img src="assets/images/call.svg" alt="">
+                            <a href="tel:9975141008"><span>9975141008</span></a>
+                        </div>
+
+                        <div class="linkmap">
+                            <a href="https://goo.gl/maps/A5TPt52aWkLRbdEp9">
+                                <img src="assets/images/google-maps.svg" alt=""> Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="addresshotel">
+                    <img src="assets/images/pin.svg" alt="">
+                    <small>SH-22, Dhule Daulatabad Highway, Aurangabad.</small>
+                </div>
+
+            </div>
+
+
+            <div class="placecard-c defaultcard">
+
+                <div class="placecard">
+                    <div class="placeimg hotelimg">
+                        <img src="assets/images/hotel4.jpg" alt="">
+                    </div>
+                    <div class="placeinfo">
+                        <div class="placename">
+                            <p>Om Shiveshwar Bhakt Nivas</p>
+                        </div>
+                        <div class="ratings">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <p>3.5</p>
+                        </div>
+                        <div class="phoneno">
+                            <img src="assets/images/call.svg" alt="">
+                            <a href="tel:9766218183"><span>9766218183</span></a>
+                        </div>
+
+                        <div class="linkmap">
+                            <a href="https://goo.gl/maps/cF7MqVEsyNWv85vJ8">
+                                <img src="assets/images/google-maps.svg" alt=""> Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="addresshotel">
+                    <img src="assets/images/pin.svg" alt="">
+                    <small> Verul, Aurangabad.</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Option 1: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js "
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s "
+        crossorigin="anonymous "></script>
+    <script src="assets/js/site.js "></script>
+</body>
+
+</html>
