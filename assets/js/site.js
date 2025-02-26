@@ -1,7 +1,7 @@
-//Get the button
+
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
@@ -12,7 +12,6 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -28,18 +27,26 @@ function sidebar_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
-function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
+const galleryImages = Array.from(document.querySelectorAll('.gallery-item img')).map(img => img.src);
+
+let currentIndex = 0;
+
+
+function openModal(image, index) {
+    currentIndex = index;
+    document.getElementById('modalImage').src = image.src;
+    var myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+    myModal.show();
 }
 
-function myFunction1(imgs) {
-    var expandImg = document.getElementById("expandedImg1");
-    var imgText = document.getElementById("imgtext1");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
+
+function navigate(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = galleryImages.length - 1;
+    } else if (currentIndex >= galleryImages.length) {
+        currentIndex = 0;
+    }
+    document.getElementById('modalImage').src = galleryImages[currentIndex];
 }
